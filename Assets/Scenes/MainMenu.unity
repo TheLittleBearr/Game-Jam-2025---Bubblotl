@@ -988,6 +988,8 @@ GameObject:
   - component: {fileID: 431494683}
   - component: {fileID: 431494685}
   - component: {fileID: 431494684}
+  - component: {fileID: 431494686}
+  - component: {fileID: 431494687}
   m_Layer: 0
   m_Name: FrogSprite
   m_TagString: Untagged
@@ -1049,6 +1051,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431494682}
   m_CullTransparentMesh: 1
+--- !u!95 &431494686
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431494682}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1231792d05ddaf04daef0706a4a41fc4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &431494687
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431494682}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: da0feb1ad80d56845b84adf2a1cc8c6c, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: da0feb1ad80d56845b84adf2a1cc8c6c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &458500268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,6 +2418,8 @@ GameObject:
   - component: {fileID: 1132300418}
   - component: {fileID: 1132300420}
   - component: {fileID: 1132300419}
+  - component: {fileID: 1132300422}
+  - component: {fileID: 1132300421}
   m_Layer: 0
   m_Name: PopSprite
   m_TagString: Untagged
@@ -2440,6 +2481,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132300417}
   m_CullTransparentMesh: 1
+--- !u!95 &1132300421
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132300417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6148e0468c26ea149ab1c1e5717df824, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &1132300422
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132300417}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: baf0156bd8db8be4487251ce9b68a846, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: baf0156bd8db8be4487251ce9b68a846, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1169387524
 GameObject:
   m_ObjectHideFlags: 0
