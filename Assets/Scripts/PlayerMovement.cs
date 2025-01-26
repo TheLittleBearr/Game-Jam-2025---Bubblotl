@@ -48,6 +48,23 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2.0f;
         }
 
+        if (velocity.x == 0 && velocity.y < 0)
+        {
+            // IDLE 
+        }
+        if (velocity.x > 0)
+        {
+            // Moving Right
+        }
+        if (velocity.x < 0)
+        {
+            // Moving Left
+        }
+        if (velocity.y > 0)
+        {
+            // Jumping
+        }
+
         characterController.Move(velocity * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
 
