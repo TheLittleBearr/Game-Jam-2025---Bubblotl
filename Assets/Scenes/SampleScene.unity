@@ -755,7 +755,10 @@ MonoBehaviour:
   theText: {fileID: 4900000, guid: 68bb6e57ecb47b841ae3d935decbcd38, type: 3}
   startLine: 0
   endLine: 0
-  textLines: []
+  textLines:
+  - "Quite the journey you\u2019re on!"
+  textSprites:
+  - {fileID: -1495248553, guid: 8d75240413cb23647b3cfc9ee9a84c15, type: 3}
   theTextBox: {fileID: 0}
   requireButtonPress: 1
   destroyWhenActivated: 0
