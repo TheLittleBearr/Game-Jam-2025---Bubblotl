@@ -62,8 +62,6 @@ public class ActivateText : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       if (other.name == "OrboExpo2")
-        {
             buttonPrompt.SetActive(!theTextBox.isActive);
             if (requireButtonPress)
             {
@@ -83,15 +81,11 @@ public class ActivateText : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-        }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.name == "OrboExpo2")
-        {
             buttonPrompt.SetActive(false);
             waitForPress = false;
-        }
     }
 }
 
