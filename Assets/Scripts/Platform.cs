@@ -22,5 +22,9 @@ public class Platform : MonoBehaviour
         {
             meshCollider.isTrigger = false;
         }
+        if (playerMovement.transform.position.y < transform.position.y)
+        {
+            meshCollider.isTrigger = true;
+        }
     }
 }
