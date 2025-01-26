@@ -142,7 +142,7 @@ public class GameManager : MonoBehaviour
     public void PlayGame()
     {
         ChangeGameState(GameState.GamePlay);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("LevelBuild");
     }
 
     public void OpenMainMenu()

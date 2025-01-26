@@ -5710,10 +5710,10 @@ MonoBehaviour:
   groundSpeed: 6
   airSpeed: 4
   currentSpeed: 0
-  distance: 1.05
+  distance: 1.1
   isGrounded: 0
-  gravity: -15
-  jumpforce: 10
+  gravity: -30
+  jumpforce: 5
   defaultGroundedTimer: 0.125
   groundedTimer: 0
 --- !u!54 &1941377831
