@@ -14,6 +14,7 @@ public class ActivateText : MonoBehaviour
     public int endLine;
 
     public string[] textLines;
+    public Sprite[] textSprites;
 
     public TextBoxManager theTextBox;
 
@@ -50,7 +51,7 @@ public class ActivateText : MonoBehaviour
                 theTextBox.ReloadScript(theText);
                 theTextBox.currentLine = startLine;
                 theTextBox.endAtLine = endLine;
-                theTextBox.EnableTextBox(); 
+                theTextBox.EnableTextBox();
             }
 
             if (destroyWhenActivated)

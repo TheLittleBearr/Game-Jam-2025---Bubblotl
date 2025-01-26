@@ -1769,7 +1769,7 @@ MonoBehaviour:
   textFile: {fileID: 0}
   textLines: []
   isActive: 0
-  typeSpeed: 0.175
+  typeSpeed: 0.015
   stopPlayerMovement: 1
 --- !u!114 &749585698 stripped
 MonoBehaviour:
