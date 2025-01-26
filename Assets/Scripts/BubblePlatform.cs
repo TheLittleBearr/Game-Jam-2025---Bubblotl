@@ -6,9 +6,18 @@ using UnityEngine.UIElements;
 
 public class BubblePlatform : MonoBehaviour
 {
+    public BubblePlatformRespawner bubblePlatformRespawner;
+
     [SerializeField] private bool wasJumpedOn = false;
 
     private Vector3 scaleChange = new Vector3(0.05f, 0.05f, 0.05f);
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        bubblePlatformRespawner = transform.parent.GetComponent<BubblePlatformRespawner>();
+        wasJumpedOn = false;
+    }
 
     void OnCollisionEnter(Collision collision)
     {
@@ -28,6 +37,7 @@ public class BubblePlatform : MonoBehaviour
 
         if (gameObject.transform.localScale.x <= 0)
         {
+            bubblePlatformRespawner.bubbleDestroyed = true;
             Destroy(gameObject);
         }
     }
