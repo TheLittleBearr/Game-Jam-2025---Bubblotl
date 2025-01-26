@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonPrompt: {fileID: 280173702}
-  theText: {fileID: 0}
+  theText: {fileID: 4900000, guid: 68bb6e57ecb47b841ae3d935decbcd38, type: 3}
   startLine: 0
   endLine: 0
   textLines: []
