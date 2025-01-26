@@ -31,7 +31,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -82,7 +111,97 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Axolotl_Idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Axolotl
+      parentName: Axolotl_Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: helmet
+      parentName: Axolotl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Global_ctrl
+      parentName: Axolotl_Idle(Clone)
+      position: {x: -0.00014767695, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips_jnt
+      parentName: Global_ctrl
+      position: {x: 0.00033968108, y: 0.00715506, z: 0}
+      rotation: {x: -0.35659304, y: -0.28187826, z: 0.19733614, w: 0.86858773}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Chest_jnt
+      parentName: Hips_jnt
+      position: {x: -0.00006050238, y: 0.0053200475, z: -1.4094628e-20}
+      rotation: {x: 0.12382202, y: 0.0007969736, z: -0.12825724, w: 0.98398054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck_jnt
+      parentName: Chest_jnt
+      position: {x: 1.743397e-18, y: 0.0039011836, z: -1.6263032e-21}
+      rotation: {x: -5.823058e-11, y: 1.4926525e-11, z: -0.008093701, w: 0.9999673}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: LShoulder_jnt
+      parentName: Chest_jnt
+      position: {x: -0.008163083, y: 0.0017378943, z: -0.000000013324711}
+      rotation: {x: 0.11332449, y: 0.15731418, z: 0.72662795, w: 0.6591067}
+      scale: {x: 1.000001, y: 1.0000006, z: 1}
+    - name: LArm_jnt
+      parentName: LShoulder_jnt
+      position: {x: 8.881784e-18, y: 0.008895278, z: 1.0842021e-21}
+      rotation: {x: 2.6827093e-11, y: 3.656231e-11, z: 0.04139462, w: 0.99914294}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1}
+    - name: RShoulder_jnt
+      parentName: Chest_jnt
+      position: {x: 0.008200838, y: 0.0019609116, z: -0.000000011953541}
+      rotation: {x: 0.7787308, y: 0.6044727, z: -0.1032146, w: -0.13243042}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000012}
+    - name: RArm_jnt
+      parentName: RShoulder_jnt
+      position: {x: 0.00035992643, y: 0.008887993, z: 1.0912494e-18}
+      rotation: {x: -3.5450679e-12, y: 3.9153313e-11, z: 0.06989907, w: 0.99755406}
+      scale: {x: 1, y: 0.9999998, z: 0.99999934}
+    - name: LHip_jnt
+      parentName: Hips_jnt
+      position: {x: -0.00765306, y: -0.0015919209, z: 1.0570971e-20}
+      rotation: {x: 0.9337559, y: -0.2773715, z: -0.042522114, w: -0.2221641}
+      scale: {x: 1, y: 1.0000006, z: 1.0000002}
+    - name: LFoot_jnt
+      parentName: LHip_jnt
+      position: {x: 0.0006137215, y: 0.0054886155, z: 1.7780915e-18}
+      rotation: {x: 1.4462272e-11, y: -6.1994706e-12, z: -0.053063765, w: 0.9985912}
+      scale: {x: 1, y: 1.0000002, z: 1.0000006}
+    - name: RHip_jnt
+      parentName: Hips_jnt
+      position: {x: 0.0077356803, y: -0.0011237393, z: -2.7105054e-22}
+      rotation: {x: -1.8189894e-11, y: 3.5470293e-11, z: 0.99469805, w: 0.102838814}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1}
+    - name: RFoot_jnt
+      parentName: RHip_jnt
+      position: {x: -3.330669e-18, y: 0.0055228216, z: 1.5720931e-20}
+      rotation: {x: 0.030158576, y: -0.9995381, z: 0.003739899, w: -0.0001128422}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: TailBase_jnt
+      parentName: Hips_jnt
+      position: {x: -0.000034011402, y: 0.0011179645, z: -0.0072129527}
+      rotation: {x: 0.15553717, y: -0.43153244, z: 0.8748143, w: 0.15584604}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000002}
+    - name: TailMiddle_jnt
+      parentName: TailBase_jnt
+      position: {x: -1.8388068e-18, y: 0.012641517, z: -1.110223e-18}
+      rotation: {x: 0.03747309, y: 0.9883007, z: -0.14748688, w: 0.010251846}
+      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000001}
+    - name: TailTip_jnt
+      parentName: TailMiddle_jnt
+      position: {x: -1.2143064e-18, y: 0.012508729, z: -8.6042285e-18}
+      rotation: {x: 0.67446315, y: 0.46572244, z: -0.5188785, w: 0.24283133}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.9999997}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -99,7 +218,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
