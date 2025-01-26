@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
         GamePause,
         Settings,
         Intro,
-        Credits
+        Credits,
+        GameEnd
     }
 
     public GameState currentGameState;
@@ -68,6 +69,9 @@ public class GameManager : MonoBehaviour
             case GameState.Credits:
                 Credits();
                 break;
+            case GameState.GameEnd:
+                GameEnd();
+                break;
         }
     }
 
@@ -111,6 +115,13 @@ public class GameManager : MonoBehaviour
     {
         Cursor.visible = true;
         uIManager.CreditsUI();
+        player.SetActive(false);
+    }
+
+    void GameEnd()
+    {
+        Cursor.visible = true;
+        uIManager.GameEndUI();
         player.SetActive(false);
     }
     #endregion

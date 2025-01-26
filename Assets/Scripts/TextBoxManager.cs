@@ -9,6 +9,8 @@ public class TextBoxManager : MonoBehaviour
 {
     public Animator animator;
 
+    public GameManager gameManager;
+
     public GameObject textBox;
 
     public TextMeshProUGUI theText;
@@ -45,6 +47,7 @@ public class TextBoxManager : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerMovement>();
+        gameManager = FindObjectOfType<GameManager>();
 
         if (textFile != null)
         {
@@ -136,9 +139,10 @@ public class TextBoxManager : MonoBehaviour
         animator.SetTrigger("Transition");
 
         // play scene transition;
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Level2");
-        animator.SetTrigger("Transition");
+        yield return new WaitForSeconds(0.1f);
+        SceneManager.LoadScene("MainMenu");
+        gameManager.ChangeGameState(GameManager.GameState.GameEnd);
+        //animator.SetTrigger("Transition");
     }
 
     private IEnumerator TextScroll (string lineOfText)
