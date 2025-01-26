@@ -11,6 +11,7 @@ public class Platform : MonoBehaviour
     void Start()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
+        meshCollider = GetComponent<MeshCollider>();
         meshCollider.isTrigger = true;
     }
 
