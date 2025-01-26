@@ -203,8 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 28391277}
-  - component: {fileID: 28391276}
-  - component: {fileID: 28391275}
+  - component: {fileID: 28391278}
   m_Layer: 0
   m_Name: bubPar (14)
   m_TagString: Untagged
@@ -212,36 +211,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &28391275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28391274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &28391276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28391274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &28391277
 Transform:
   m_ObjectHideFlags: 0
@@ -258,6 +227,23 @@ Transform:
   - {fileID: 1743468618}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28391278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28391274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1 &45765399
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +520,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1954052760}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1954052764}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1001 &142529040
 PrefabInstance:
@@ -606,6 +596,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1091435558}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1091435562}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &214635481
 GameObject:
@@ -616,7 +610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 214635483}
-  - component: {fileID: 214635482}
+  - component: {fileID: 214635484}
   m_Layer: 0
   m_Name: bubPar (4)
   m_TagString: Untagged
@@ -624,20 +618,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &214635482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214635481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &214635483
 Transform:
   m_ObjectHideFlags: 0
@@ -654,6 +634,23 @@ Transform:
   - {fileID: 1954052763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &214635484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214635481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1001 &227443132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -729,6 +726,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1743468619}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1743468620}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &232911565
 GameObject:
@@ -823,8 +824,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 257143165}
-  - component: {fileID: 257143164}
-  - component: {fileID: 257143163}
+  - component: {fileID: 257143166}
   m_Layer: 0
   m_Name: bubPar (5)
   m_TagString: Untagged
@@ -832,36 +832,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &257143163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257143162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &257143164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257143162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &257143165
 Transform:
   m_ObjectHideFlags: 0
@@ -878,6 +848,23 @@ Transform:
   - {fileID: 829304461}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &257143166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257143162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1001 &262908758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -949,6 +936,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 262908760}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 262908764}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &262908759 stripped
 GameObject:
@@ -984,6 +975,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 262908758}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &262908764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262908759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &326488237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
@@ -1018,6 +1023,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1739875222}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &326488242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326488237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &327331313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,8 +1401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 393229322}
-  - component: {fileID: 393229321}
-  - component: {fileID: 393229320}
+  - component: {fileID: 393229323}
   m_Layer: 0
   m_Name: bubPar (7)
   m_TagString: Untagged
@@ -1391,36 +1409,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &393229320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393229319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &393229321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393229319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &393229322
 Transform:
   m_ObjectHideFlags: 0
@@ -1437,6 +1425,23 @@ Transform:
   - {fileID: 2127629300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &393229323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393229319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1 &408403211 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
@@ -1471,6 +1476,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 663541547}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &408403216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408403211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &429051675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +1653,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2099025896}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2099025898}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &442152948
 GameObject:
@@ -2054,6 +2077,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1754620512}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1754620513}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &565353317
 GameObject:
@@ -2457,6 +2484,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 408403212}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 408403216}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1001 &677301117
 PrefabInstance:
@@ -2567,7 +2598,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 682446889}
-  - component: {fileID: 682446888}
   - component: {fileID: 682446887}
   m_Layer: 0
   m_Name: bubPar
@@ -2588,24 +2618,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
   bubbleDestroyed: 0
   bubblePosition: {x: 0, y: 0, z: 0}
   respawnTimer: 2
---- !u!114 &682446888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682446886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &682446889
 Transform:
   m_ObjectHideFlags: 0
@@ -2656,6 +2673,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2074043729}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &695607195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695607190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1001 &700128878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2803,6 +2834,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1189255269}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1189255270}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &796003066 stripped
 GameObject:
@@ -2880,6 +2915,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1913619500}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &829304462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829304457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &840206298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67ca82a40efc13e449cf36d15bef151e,
@@ -3199,9 +3248,9 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!143 &894609778
 CharacterController:
@@ -3389,6 +3438,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubblePlatformRespawner: {fileID: 0}
   wasJumpedOn: 1
+--- !u!114 &929195438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929195432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &960285221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3582,7 +3645,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1014315798}
-  - component: {fileID: 1014315797}
   - component: {fileID: 1014315796}
   m_Layer: 0
   m_Name: bubPar (16)
@@ -3603,24 +3665,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
   bubbleDestroyed: 0
   bubblePosition: {x: 0, y: 0, z: 0}
   respawnTimer: 2
---- !u!114 &1014315797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014315795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &1014315798
 Transform:
   m_ObjectHideFlags: 0
@@ -3876,6 +3925,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1576362574}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1087492186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087492181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &1091435557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
@@ -3910,6 +3973,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 142529040}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1091435562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091435557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &1102395151 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67ca82a40efc13e449cf36d15bef151e,
@@ -3947,7 +4024,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1117266020}
-  - component: {fileID: 1117266019}
   - component: {fileID: 1117266018}
   m_Layer: 0
   m_Name: bubPar (9)
@@ -3968,24 +4044,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
   bubbleDestroyed: 0
   bubblePosition: {x: 0, y: 0, z: 0}
   respawnTimer: 2
---- !u!114 &1117266019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117266017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &1117266020
 Transform:
   m_ObjectHideFlags: 0
@@ -4108,6 +4171,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 289301614986012343, guid: 95a3e01c183db9047962f27f61597693, type: 3}
+--- !u!114 &1189255270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189255265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &1205110129
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,8 +4365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1237822229}
-  - component: {fileID: 1237822228}
-  - component: {fileID: 1237822227}
+  - component: {fileID: 1237822230}
   m_Layer: 0
   m_Name: bubPar (8)
   m_TagString: Untagged
@@ -4297,36 +4373,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1237822227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237822226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &1237822228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237822226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &1237822229
 Transform:
   m_ObjectHideFlags: 0
@@ -4343,6 +4389,23 @@ Transform:
   - {fileID: 326488241}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237822230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237822226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1 &1251628095
 GameObject:
   m_ObjectHideFlags: 0
@@ -4352,8 +4415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1251628098}
-  - component: {fileID: 1251628097}
-  - component: {fileID: 1251628096}
+  - component: {fileID: 1251628099}
   m_Layer: 0
   m_Name: bubPar (10)
   m_TagString: Untagged
@@ -4361,36 +4423,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1251628096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1251628095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &1251628097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1251628095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &1251628098
 Transform:
   m_ObjectHideFlags: 0
@@ -4407,6 +4439,23 @@ Transform:
   - {fileID: 695607194}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1251628099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251628095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1 &1306675444 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67ca82a40efc13e449cf36d15bef151e,
@@ -4629,6 +4678,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1506816483}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1451380236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451380231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &1495919979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67ca82a40efc13e449cf36d15bef151e,
@@ -4728,6 +4791,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1451380232}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1451380236}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &1518614778
 GameObject:
@@ -4937,6 +5004,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2127629297}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2127629301}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1001 &1576362574
 PrefabInstance:
@@ -5009,6 +5080,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1087492182}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1087492186}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1001 &1629064024
 PrefabInstance:
@@ -5119,8 +5194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696034773}
-  - component: {fileID: 1696034772}
-  - component: {fileID: 1696034771}
+  - component: {fileID: 1696034774}
   m_Layer: 0
   m_Name: bubPar (11)
   m_TagString: Untagged
@@ -5128,36 +5202,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1696034771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1696034770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &1696034772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1696034770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &1696034773
 Transform:
   m_ObjectHideFlags: 0
@@ -5174,6 +5218,23 @@ Transform:
   - {fileID: 1087492185}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1696034774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696034770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1001 &1729575530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5317,6 +5378,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 326488238}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 326488242}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &1743468614 stripped
 GameObject:
@@ -5366,6 +5431,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubblePlatformRespawner: {fileID: 0}
   wasJumpedOn: 1
+--- !u!114 &1743468620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743468614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &1747797192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67ca82a40efc13e449cf36d15bef151e,
@@ -5442,6 +5521,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubblePlatformRespawner: {fileID: 0}
   wasJumpedOn: 1
+--- !u!114 &1754620513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754620507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1001 &1756569841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5523,8 +5616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1762182493}
-  - component: {fileID: 1762182492}
-  - component: {fileID: 1762182491}
+  - component: {fileID: 1762182494}
   m_Layer: 0
   m_Name: bubPar (15)
   m_TagString: Untagged
@@ -5532,36 +5624,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1762182491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762182490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &1762182492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762182490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &1762182493
 Transform:
   m_ObjectHideFlags: 0
@@ -5578,6 +5640,23 @@ Transform:
   - {fileID: 2099025895}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1762182494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762182490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1001 &1767456582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5858,6 +5937,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 929195437}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 929195438}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &1860583900 stripped
 GameObject:
@@ -5896,8 +5979,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1860593001}
-  - component: {fileID: 1860593000}
-  - component: {fileID: 1860592999}
+  - component: {fileID: 1860593002}
   m_Layer: 0
   m_Name: bubPar (2)
   m_TagString: Untagged
@@ -5905,36 +5987,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1860592999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860592998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &1860593000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860592998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &1860593001
 Transform:
   m_ObjectHideFlags: 0
@@ -5951,6 +6003,23 @@ Transform:
   - {fileID: 1091435561}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1860593002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860592998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1001 &1877076667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6043,7 +6112,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1882161002}
-  - component: {fileID: 1882161001}
   - component: {fileID: 1882161000}
   m_Layer: 0
   m_Name: bubPar (12)
@@ -6064,24 +6132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
   bubbleDestroyed: 0
   bubblePosition: {x: 0, y: 0, z: 0}
   respawnTimer: 2
---- !u!114 &1882161001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882160999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &1882161002
 Transform:
   m_ObjectHideFlags: 0
@@ -6325,6 +6380,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 829304458}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 829304462}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1001 &1945348576
 PrefabInstance:
@@ -6460,6 +6519,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 99076893}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1954052764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954052759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1001 &1978637569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6569,8 +6642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2015405676}
-  - component: {fileID: 2015405675}
-  - component: {fileID: 2015405674}
+  - component: {fileID: 2015405677}
   m_Layer: 0
   m_Name: bubPar (3)
   m_TagString: Untagged
@@ -6578,36 +6650,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2015405674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015405673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &2015405675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015405673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &2015405676
 Transform:
   m_ObjectHideFlags: 0
@@ -6624,6 +6666,23 @@ Transform:
   - {fileID: 262908763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2015405677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015405673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1 &2030475089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67ca82a40efc13e449cf36d15bef151e,
@@ -6907,6 +6966,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 695607191}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 695607195}
   m_SourcePrefab: {fileID: 100100000, guid: 95a3e01c183db9047962f27f61597693, type: 3}
 --- !u!1 &2081996578
 GameObject:
@@ -7001,8 +7064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2083307940}
-  - component: {fileID: 2083307939}
-  - component: {fileID: 2083307938}
+  - component: {fileID: 2083307941}
   m_Layer: 0
   m_Name: bubPar (1)
   m_TagString: Untagged
@@ -7010,36 +7072,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2083307938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083307937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 0}
-  bubbleDestroyed: 0
-  bubblePosition: {x: 0, y: 0, z: 0}
-  respawnTimer: 2
---- !u!114 &2083307939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083307937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePlatformRespawner: {fileID: 0}
-  wasJumpedOn: 0
 --- !u!4 &2083307940
 Transform:
   m_ObjectHideFlags: 0
@@ -7056,6 +7088,23 @@ Transform:
   - {fileID: 408403215}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2083307941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083307937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd92ffa61684847b41d6288fc08bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
+    type: 3}
+  bubbleDestroyed: 0
+  bubblePosition: {x: 0, y: 0, z: 0}
+  respawnTimer: 2
 --- !u!1 &2099025891 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
@@ -7118,6 +7167,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubblePlatformRespawner: {fileID: 0}
   wasJumpedOn: 1
+--- !u!114 &2099025898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099025891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1 &2127629296 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 95a3e01c183db9047962f27f61597693,
@@ -7152,6 +7215,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1545050316}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2127629301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127629296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac73e45716bc9b46be481f4b858a98d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePlatformRespawner: {fileID: 0}
+  wasJumpedOn: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
