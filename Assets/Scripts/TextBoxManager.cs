@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
+using UnityEngine.SceneManagement;
 
 public class TextBoxManager : MonoBehaviour
 {
@@ -94,6 +96,11 @@ public class TextBoxManager : MonoBehaviour
                     //else
                     //{
                         DisableTextBox();
+
+                    // PLAY SCENE TRANSITION
+
+                    StartCoroutine(SceneTransition());
+
                     //}
                 }
                 else
@@ -120,6 +127,13 @@ public class TextBoxManager : MonoBehaviour
         {
             DisableTextBox();
         }
+    }
+
+    private IEnumerator SceneTransition()
+    {
+        // play scene transition;
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Level2");
     }
 
     private IEnumerator TextScroll (string lineOfText)
