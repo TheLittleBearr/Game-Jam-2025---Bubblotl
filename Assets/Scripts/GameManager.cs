@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
         GamePlay,
         GamePause,
         Settings,
-        Intro
+        Intro,
+        Credits
     }
 
     public GameState currentGameState;
@@ -64,6 +65,9 @@ public class GameManager : MonoBehaviour
             case GameState.Intro:
                 Intro();
                 break;
+            case GameState.Credits:
+                Credits();
+                break;
         }
     }
 
@@ -102,6 +106,13 @@ public class GameManager : MonoBehaviour
         uIManager.IntroUI();
         player.SetActive(false);
     }
+
+    void Credits()
+    {
+        Cursor.visible = true;
+        uIManager.CreditsUI();
+        player.SetActive(false);
+    }
     #endregion
 
     public void ChangeGameState(GameState newGameState)
@@ -131,6 +142,11 @@ public class GameManager : MonoBehaviour
     public void OpenSettings()
     {
         ChangeGameState(GameState.Settings);
+    }
+
+    public void OpenCredits()
+    {
+        ChangeGameState(GameState.Credits);
     }
 
     public void QuitGame()

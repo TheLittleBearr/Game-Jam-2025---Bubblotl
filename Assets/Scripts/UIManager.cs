@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
     public GameObject gamePauseUI;
     public GameObject settingsUI;
     public GameObject introUI;
+    public GameObject creditsUI;
 
     public void TurnOffUI()
     {
@@ -15,6 +16,7 @@ public class UIManager : MonoBehaviour
         gamePauseUI.SetActive(false);
         settingsUI.SetActive(false);
         introUI.SetActive(false);
+        creditsUI.SetActive(false);
     }
 
     public void MainMenuUI()
@@ -45,5 +47,11 @@ public class UIManager : MonoBehaviour
     {
         TurnOffUI();
         introUI.SetActive(true);
+    }
+
+    public void CreditsUI()
+    {
+        TurnOffUI();
+        creditsUI.SetActive(true);
     }
 }
